@@ -82,3 +82,54 @@ The objective of this task was to find the top 3 territories based on total turn
    The top 3 territories by share in total turnover and by turnover per warehouse for Week 23 were successfully identified and presented in the following Pivot Tables.
    ![Data Visualization Process - Task 2a](task2a.png)
 
+
+#### Task 3
+Calculating the Margin and Profitability in % of Turnover in All Territories
+
+1. **Calculating Profit and Margin**:
+   - **Profit**: The formula for calculating profit is:
+     ```excel
+     =[@[Товарооборот, руб]] - [@[Товарооборот в себестоимости]] - [@[Потери, руб]]
+     ```
+     This formula subtracts the cost turnover and losses from the total revenue to determine the profit.
+     
+   - **Margin**: The formula for margin is:
+     ```excel
+     =[@[Товарооборот, руб]] - [@[Товарооборот в себестоимости]]
+     ```
+     This calculates the margin by subtracting the cost turnover from the total revenue.
+
+2. **Creating the Pivot Table**:
+   A Pivot Table was created with the following structure:
+   - **Rows**: Added **Территория** (territory) to the rows to group the data by territories.
+   - **Values**: Added **Sum of Margin** and **Sum of Profit** to the values section.
+   - **Percentage View**: Both **Margin** and **Profit** were changed to display as percentages of the Grand Total. This allows for an understanding of the relative margin and profit per territory.
+
+3. **Results:**
+   Margin and Profitability in % of Turnover in All Territories.
+   ![Data Visualization Process - Task 3](task3.png)
+
+
+#### Task 4
+Creating a Schedule with the Daily Dynamics of Turnover and Profitability in % for All Territories
+
+1. **Pivot Table Creation**:
+   A new Pivot Table was created to track the daily dynamics of turnover and profitability across all territories:
+   - **Rows**: Added **Дата** (Date) to the rows to analyze daily data.
+   - **Values**: Added the following values:
+     - **Sum of Товарооборот, шт** (Quantity of turnover items)
+     - **Sum of Товарооборот, руб** (Revenue turnover)
+     - **Sum of Profit**
+   - **Profit as Percentage**: The **Sum of Profit** was set to show as a percentage of the Grand Total, representing profitability for each day relative to the total.
+
+2. **Line Chart Creation**:
+   A line chart was created to visualize the data:
+   - **X-Axis**: **Дата** (Date) was used as the X-axis to show the time period.
+   - **Y-Axis**: **Sum of Товарооборот, руб** (Revenue turnover) was plotted to visualize daily turnover trends.
+   - **Chart Type**: A line chart was used to clearly display daily dynamics of turnover over time.
+
+3. **Results:**
+   a Schedule with the Daily Dynamics of Turnover and Profitability in % for All Territories
+   ![Data Visualization Process - Task 4](task4.png)
+
+
