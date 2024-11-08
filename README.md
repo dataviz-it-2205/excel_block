@@ -57,13 +57,7 @@ Here's a concise Markdown summary for **Task 2a**:
 
 The objective of this task was to find the top 3 territories based on total turnover and turnover per warehouse for the last week.
 
-1. **Calculating Turnover**:  
-   A new column, **Turnover**, was created to calculate the turnover by subtracting the **Товарооборот в себестоимости** (cost turnover) from the **Товарооборот, руб** (revenue turnover). The formula used was:
-   ```excel
-   =[@[Товарооборот, руб]] - [@[Товарооборот в себестоимости]]
-   ```
-
-2. **Top 3 Territories by Share in Total Turnover**:  
+1. **Top 3 Territories by Share in Total Turnover**:  
    A Pivot Table was created on the Data table with the following steps:
    - **Rows**: Added **Территория** (territory) to rows.
    - **Values**: Added **Turnover** and summarized by **SUM**.
@@ -71,14 +65,14 @@ The objective of this task was to find the top 3 territories based on total turn
    - **Filtering**: Filtered the territories to show the top 3 based on **Sum of Turnover**.
    - **Percentage View**: Changed the territory view to show percentages of the grand total for turnover.
 
-3. **Top 3 Territories by Turnover to Warehouse for the Last Week**:  
+2. **Top 3 Territories by Turnover to Warehouse for the Last Week**:  
    A second Pivot Table was created with the following steps:
    - **Rows**: Added **Территория** (territory) to rows.
-   - **Values**: Added **Turnover** and summarized by **SUM**.
+   - **Values**: Added **Товарооборот, руб** and summarized by **SUM**.
    - **Filters**: Added **Week** to filters and selected **Week 23**, which corresponds to the latest week.
-   - **Filtering**: Filtered the territories to show the top 3 based on **Sum of Turnover** for **Week 23**.
+   - **Filtering**: Filtered the territories to show the top 3 based on **Sum of Товарооборот, руб** for **Week 23**.
 
-4. **Results:**
+3. **Results:**
    The top 3 territories by share in total turnover and by turnover per warehouse for Week 23 were successfully identified and presented in the following Pivot Tables.
    ![Data Visualization Process - Task 2a](task2a.png)
 
